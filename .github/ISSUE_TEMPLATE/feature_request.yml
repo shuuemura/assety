@@ -1,0 +1,96 @@
+name: 🚀 機能要求
+description: 新しい機能の提案
+title: "[Feature] "
+labels: ["enhancement", "user-value"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 機能要求テンプレート
+        
+        ユーザー価値を重視した機能提案をお願いします。
+        学習要素がある場合は併記してください。
+
+  - type: textarea
+    id: user-value
+    attributes:
+      label: 🎯 ユーザー価値
+      description: この機能がユーザーにどのような価値を提供するか
+      placeholder: |
+        例：ユーザーが外出先でも素早く支出を記録できるようになり、家計管理の継続性が向上する
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 📋 解決したい課題
+      description: 現在のユーザーが抱えている問題
+      placeholder: |
+        例：現在は家に帰ってからでないと支出を記録できず、忘れてしまうことが多い
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: ✨ 提案する解決策
+      description: 具体的な機能の説明
+      placeholder: |
+        例：
+        - ワンタップで支出を記録できるクイック入力機能
+        - よく使うカテゴリのショートカット
+        - 音声入力対応
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: ✅ 受け入れ条件
+      description: この機能が完成したと言える条件
+      placeholder: |
+        例：
+        - [ ] 3タップ以内で支出を記録できる
+        - [ ] オフラインでも動作する
+        - [ ] 入力データが自動同期される
+    validations:
+      required: true
+
+  - type: textarea
+    id: learning-points
+    attributes:
+      label: 📚 学習要素（任意）
+      description: この機能実装で学べる技術的なポイント
+      placeholder: |
+        例：
+        - PWAのオフライン機能実装
+        - React Hook Formでの最適化
+        - IndexedDBでのローカルストレージ
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 優先度
+      description: この機能の重要度
+      options:
+        - 🔴 高（コア機能）
+        - 🟡 中（重要な改善）
+        - 🟢 低（Nice to have）
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📎 追加情報
+      description: 参考資料、モックアップ、関連Issueなど
+      placeholder: |
+        例：
+        - 参考アプリ: Money Forward
+        - デザインモックアップ: [リンク]
+        - 関連Issue: #123
+    validations:
+      required: false 
